@@ -314,3 +314,55 @@ main .article .tags {
   font-size: 20px;
   color: #757575;
 }
+
+.changedColor {
+  animation: changingColor 2s ease forwards;
+}
+
+.changedColorReverse {
+  animation: changingColorReverse 1s ease forwards;
+}
+
+.buttonBefore {
+  animation: buttonBefore 2s ease forwards;
+}
+
+.buttonAfter {
+  animation: buttonAfter 1s ease forwards;
+}
+
+@keyframes changingColor {
+  0% {
+    background-color: #ffc017;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+@keyframes changingColorReverse {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #ffc017;
+  }
+}
+
+@keyframes buttonBefore {
+  0% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+@keyframes buttonAfter {
+  0% {
+    background-color: green;
+  }
+  100% {
+    background-color: rgb(0, 0, 0);
+  }
+}

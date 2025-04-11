@@ -8346,5 +8346,33 @@
         </div>
       </aside>
     </main>
+
+    <script>
+      let lastScrollTop = 0;
+      const header = document.getElementsByTagName("header")[0];
+      const headerButton = document.getElementById("headerButton");
+      const triggerDown = 100;
+      const triggerUp = document.documentElement.scrollHeight / 2 - window.innerHeight;
+
+      window.addEventListener("scroll", function () {
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          if (scrollTop > triggerDown) {
+            header.classList.remove("changedColorReverse");
+            header.classList.add("changedColor");
+            headerButton.classList.remove("buttonAfter");
+            headerButton.classList.add("buttonBefore");
+          }
+        } else {
+          if (scrollTop < triggerUp) {
+            header.classList.remove("changedColor");
+            header.classList.add("changedColorReverse");
+            headerButton.classList.remove("buttonBefore");
+            headerButton.classList.add("buttonAfter");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
