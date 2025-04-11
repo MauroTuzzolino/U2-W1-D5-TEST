@@ -268,7 +268,7 @@ main .article .tags {
 .articleImg img {
   width: 100%;
   height: 100%;
-  ogject-fit: cover;
+  object-fit: cover;
 }
 
 #tagsContainer {
@@ -324,7 +324,7 @@ main .article .tags {
 }
 
 .buttonBefore {
-  animation: buttonBefore 2s ease forwards;
+  animation: buttonBefore 1s ease forwards;
 }
 
 .buttonAfter {

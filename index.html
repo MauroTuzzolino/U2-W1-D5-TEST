@@ -8351,8 +8351,9 @@
       let lastScrollTop = 0;
       const header = document.getElementsByTagName("header")[0];
       const headerButton = document.getElementById("headerButton");
+      const hero = document.getElementById("hero");
       const triggerDown = 100;
-      const triggerUp = document.documentElement.scrollHeight / 2 - window.innerHeight;
+      const triggerUp = hero.offsetTop + hero.offsetHeight;
 
       window.addEventListener("scroll", function () {
         let scrollTop = window.scrollY || document.documentElement.scrollTop;
