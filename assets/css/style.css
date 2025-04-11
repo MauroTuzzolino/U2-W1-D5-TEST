@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: Spectral, serif;
+}
+
+p,
+button,
+ul,
+ol,
+li {
+  font-family: Roboto, sans-serif;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+header {
+  width: 100%;
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+}
+
+.genericContainer {
+  width: 70%;
+  margin: auto;
+}
+
+#headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0 30px 0;
+}
+
+#headerContainer img {
+  height: 30px;
+}
+
+header nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 30%;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+header nav ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+#heroContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#heroMainSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+}
+
+#heroMainSection h1 {
+  font-size: 110px;
+  margin-bottom: 30px;
+}
+
+#heroMainSection p {
+  font-size: 30px;
+  margin-bottom: 50px;
+  max-width: 70%;
+}
+
+#heroButton {
+  font-size: 20px;
+  width: 30%;
+}
+
+#svgContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+#titleOfSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#increaseImg img {
+  height: 40px;
+}
+
+#titleOfSection h6 {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+#sixPartsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 70px 0px;
+}
+
+.littleSection {
+  width: 32%;
+  display: flex;
+}
+
+.number {
+  color: #e6e7e7;
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.littleSectionText {
+  line-height: 30px;
+}
+
+.littleSectionText h4 {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.tags {
+  font-size: 20px;
+  color: #757575;
+}
+
+.profileName {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.profileName img {
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+section {
+  padding-bottom: 70px;
+  margin-bottom: 70px;
+  border-bottom: 1px solid #c2c4c4;
+}
+
+#asideContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 40px;
+}
+
+.articleText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+.articleText h3 {
+  font-size: 30px;
+}
+
+.paragraph {
+  line-height: 20px;
+  color: #757575;
+}
+
+main .article .tags {
+  font-size: 15px;
+}
+
+.articleImg {
+  width: 25%;
+}
+
+.articleImg img {
+  width: 100%;
+}
